@@ -1,0 +1,68 @@
+Your TA's name:
+
+Students in your studio group:
+
+    Name        WUSTLKey (e.g. "a.bear")
+	
+1.  Evin		evin
+2.
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question A1:
+Start with A
+A > B = 3
+A > C = 6
+A > F = 9
+A > D = 12
+A > E = 14
+Question A2:
+A - F
+F - D
+F - C
+C - B
+D - E
+
+Question A3:
+MST:
+A - F
+F - D
+F - C
+C - B
+D - E
+
+Weight: 13
+
+Question B1:
+All future options made by the greedy choice must still be accessible
+after a greedy choice is made.
+
+The greedy choice picks the least option at each junction.
+
+Question B2:
+Adding E to T* must create one cycle, since prim's Generates a tree-like pattern that means only one cycle is created
+Question B3:
+
+Question B4:
+Because Prim's has been run on it.
+Question C1:
+
+Question C2:
+Use something similar to Kruskals to get the most items on the ship. 
+Question C3:
+
+Question C4:
+
+Question D1:
+It's similar because its about putting the most stuff on a limited-capacity item
+Question D2:
+It's similar since its filling to a max weight, but now you need to think about max value.
+Question D3:
+CounterExample:
+Paper being worth little with a TV being heavy but worth a lot. Krustal's will fixate on low weight low value items and will ignore mid weight high value items
+Question D4:
+

@@ -1,0 +1,87 @@
+Your TA's name:
+
+Students in your studio group:
+
+    Name        WUSTLKey (e.g. "a.bear")
+	
+1. Evin Jaff			evin
+2. Brianna 	Guerro		brianna
+3. Annabel Rice			annabelrice
+4.Mia Collymore Abbas	mcollymoreabbas
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question A1:
+
+
+
+while(A[i] < inf || B[j] < inf){
+	if(A[i] < B[j]){
+		C[k] = A[i];
+		i++;
+	} 
+	else{
+		C[k] = B[j];
+		j++;
+	}
+	k++;
+}
+
+Question A2:
+Proved to TA
+Question A3:
+i+j will increase by 1 each loop
+i+j will eventually reach k
+Question A4:
+A[i] <= A[i+1] && B[i] <= B[i+1]
+and C will be sorted as a result
+Question A5:
+Base case:
+C = 0, so there is nothing in the arrays, meaning that A[i] < A[i+1] as values outside of the array for this condition has been set at inf.
+The same aplies to B[i] and B[i+1].
+
+If we iterate to C = 4, adding either A and B will reach the end, which means that we must be adding both A's and B's values.
+Since C will always pick the lowest value because A[i] < A[i+1] && B[i] < A[i+1] for all, i, so C will always select the lowest number, not violating the rules of sorted order.
+
+Question B1:
+θ(n)
+Question B2:
+T(n) = 2T(n/2) + cn 
+Question B3:
+f(n) = cn  vs n^(logbase2(2))  so n vs n
+
+Case 2A:
+
+k = 0
+
+θ(n log(n))
+
+Question B4:
+
+T(n) = k T(n/k) + cn
+
+Question B5:
+
+f(n) = cn
+
+n^(logbasek(k)) so n vs n
+
+Case 2A
+
+θ(n log(n))
+
+Question C1:
+Array storage:
+θ(n log(n))
+
+logbase represents splits
+
+Question C2:
+make the 2 arrays n length and sort the arrays inside to minimize space
+Question C3:
+Don't have to use more memory
+Question C4:
+treat the array as the heap
+Question C5:

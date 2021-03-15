@@ -1,0 +1,53 @@
+Your TA's name:
+
+Students in your studio group:
+
+    Name        WUSTLKey (e.g. "a.bear")
+	
+1.  Evin Jaff   evin
+2.
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question PS1: 
+I see a similar general trend, but point-to-point they aren't the same.
+Some off the timestamps jump up and down randomly, which is all dependent on factors such as memory allocation and system processes.
+
+Question PS2:
+First off, my time plot was a little bit messy, but was definetly cleaner than the linear. Sicne the Quadratic is a loop inside a loop, it takes longer so the time is actually able to show up on a graph, unlike linear, which is fast enough that the time registers as 0.
+Question PS3: 
+Not much really changes curve wise, with the exception of putting ticks on just the loops, because the first few points end up being super flat, but then look like the normal upward curve in the other ones.
+Question PS4: 
+From the chart, I would think something like 2^n
+Question PS5: 
+It becomes linear since its only ticking for the outside loop
+Question A1:
+	
+Question A2:
+	
+Question A3:
+	
+Question A4:
+
+Question A5:
+
+Question A6:
+
+Question A7:
+	
+Question C1:
+
+Question C2:
+
+Question C3:
+	
+Question D1:
+	
+Question D2:
+
+	
+	
