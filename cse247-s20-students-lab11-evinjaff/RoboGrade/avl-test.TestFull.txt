@@ -1,0 +1,1939 @@
+-------------------
+CSE247 Robot tester starts testing avl on 2020-04-18 19:27:06 -0500
+
+========
+Testing in ./GradingRepos/repos/cse247-s20-students-lab11-evinjaff: avl as of 2020-04-11 00:01
+========
+Now in: /mnt/c/Users/coles/git/cse247/cse247-s20-support/GradingRepos/repos/cse247-s20-students-lab11-evinjaff
+Your branch is up to date with 'origin/master'.
+HEAD is now at 814d537 declared a height for the null insert - just in case
+No local changes to save
+
+Updating 814d537..78c0a9f
+Fast-forward
+ RoboGrade/avl-test.TestSmall.txt | 1497 ++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 1497 insertions(+)
+ create mode 100644 RoboGrade/avl-test.TestSmall.txt
+Going back in time to: 2020-04-11 00:01
+At hash 042013ffad54475bbc7cc70d28bd6b2f5af52442
+
+Buildfile: /mnt/c/Users/coles/git/cse247/cse247-s20-support/build.xml
+
+copytest:
+     [echo] would copy from /mnt/c/Users/coles/git/cse247/cse247-s20-tas-labs-source/ key evinjaff testfilesource test/TestFull package avl repo ./GradingRepos/repos/cse247-s20-students-lab11-evinjaff
+     [copy] Copying 1 file to /mnt/c/Users/coles/git/cse247/cse247-s20-support/GradingRepos/repos/cse247-s20-students-lab11-evinjaff/labs/avl/test
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Compiling the code
+Buildfile: /mnt/c/Users/coles/git/cse247/cse247-s20-support/build.xml
+
+compile:
+     [echo] Compiling avl/tree/AVLTree
+    [mkdir] Created dir: /mnt/c/Users/coles/git/cse247/cse247-s20-support/GradingRepos/repos/cse247-s20-students-lab11-evinjaff/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /mnt/c/Users/coles/git/cse247/cse247-s20-support/build.xml
+
+compile:
+     [echo] Compiling avl/nodes/AVLTreeNode
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /mnt/c/Users/coles/git/cse247/cse247-s20-support/build.xml
+
+compile:
+     [echo] Compiling avl/test/TestFull
+    [javac] Compiling 1 source file to /mnt/c/Users/coles/git/cse247/cse247-s20-support/GradingRepos/repos/cse247-s20-students-lab11-evinjaff/bin
+
+BUILD SUCCESSFUL
+Total time: 1 second
+Running test test.TestFull
+Buildfile: /mnt/c/Users/coles/git/cse247/cse247-s20-support/build.xml
+
+test:
+    [junit] Running avl.test.TestFull
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Testsuite: avl.test.TestFull
+    [junit] The node {7} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testSmallInsert(TestFull.java:116)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] ===== Failure report for testSmallInsert(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {7} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-7
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-7
+    [junit] |  L-6
+    [junit] 
+    [junit] ===== End Failure report for testSmallInsert(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testLargeInsertAscending(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-0
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-0
+    [junit] |  R-1
+    [junit] 
+    [junit] Tree Validation Error (detail shown below):
+    [junit] ===== End Failure report for testLargeInsertAscending(avl.test.TestFull) ========
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] ===== Failure report for testSmallRemove(avl.test.TestFull) ========
+    [junit] 	at avl.test.TestFull.testLargeInsertAscending(TestFull.java:476)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] The node {7} has height {0}, which is not the expected height given its children
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] Tree before the problem occurred:
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] Root-7
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] Root-7
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] |  L-6
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] ===== End Failure report for testSmallRemove(avl.test.TestFull) ========
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] ===== Failure report for testSmallInsertDescending(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] The node {14} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] Root-14
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] Root-14
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] |  L-13
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] ===== End Failure report for testSmallInsertDescending(avl.test.TestFull) ========
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] 
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 
+    [junit] The node {7} has height {0}, which is not the expected height given its children
+    [junit] ===== Failure report for testInsertSmallRandom(avl.test.TestFull) ========
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at avl.test.TestFull.testSmallRemove(TestFull.java:234)
+    [junit] The node {1} has height {0}, which is not the expected height given its children
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] Tree before the problem occurred:
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] Root-1
+    [junit] 
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] Tree that triggered this problem:
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] Root-1
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] |  R-4
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] ===== End Failure report for testInsertSmallRandom(avl.test.TestFull) ========
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] ===== Failure report for testTinyInsertRebalance(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] Failure message: java.lang.AssertionError: Inserted three values into empty tree but root's right child is null.
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] ===== End Failure report for testTinyInsertRebalance(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] ===== Failure report for testSmallRemoveRebalance(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] The node {15} has height {0}, which is not the expected height given its children
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] Tree before the problem occurred:
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] Root-15
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] Tree that triggered this problem:
+    [junit] Root-15
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] |  L-10
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 
+    [junit] The node {14} has height {0}, which is not the expected height given its children
+    [junit] ===== End Failure report for testSmallRemoveRebalance(avl.test.TestFull) ========
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 
+    [junit] 	at avl.test.TestFull.testSmallInsertDescending(TestFull.java:395)
+    [junit] ===== Failure report for testLargeInsertRandom(avl.test.TestFull) ========
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] The node {145147} has height {0}, which is not the expected height given its children
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] Tree before the problem occurred:
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] Root-145147
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] Root-145147
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] |  R-197342
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] ===== End Failure report for testLargeInsertRandom(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] ===== Failure report for testSmallInsertRebalance(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] The node {15} has height {0}, which is not the expected height given its children
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] Tree before the problem occurred:
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] Root-15
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Root-15
+    [junit] Tree Validation Error (detail shown below):
+    [junit] |  L-10
+    [junit] The node {1} has height {0}, which is not the expected height given its children
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] ===== End Failure report for testSmallInsertRebalance(avl.test.TestFull) ========
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 
+    [junit] 	at avl.test.TestFull.testInsertSmallRandom(TestFull.java:420)
+    [junit] 
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] ===== Failure report for testLargeInsertDescending(avl.test.TestFull) ========
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] The node {199999} has height {0}, which is not the expected height given its children
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] Tree before the problem occurred:
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] Root-199999
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] Root-199999
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] |  L-199998
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] ===== End Failure report for testLargeInsertDescending(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] ===== Failure report for testSmallInsertAscending(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] Tree before the problem occurred:
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] Root-0
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] Root-0
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] |  R-1
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 
+    [junit] The node {15} has height {0}, which is not the expected height given its children
+    [junit] ===== End Failure report for testSmallInsertAscending(avl.test.TestFull) ========
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 
+    [junit] 	at avl.test.TestFull.testSmallRemoveRebalance(TestFull.java:276)
+    [junit] ===== Failure report for testRemove(avl.test.TestFull) ========
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] Tree before the problem occurred:
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] Root-0
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] Root-0
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] |  R-1
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] ===== End Failure report for testRemove(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] ===== Failure report for testInsertDuplicates(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] The node {13} has height {0}, which is not the expected height given its children
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] Tree before the problem occurred:
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] Root-13
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Root-13
+    [junit] Tree Validation Error (detail shown below):
+    [junit] |  L-10
+    [junit] The node {145147} has height {0}, which is not the expected height given its children
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] ===== End Failure report for testInsertDuplicates(avl.test.TestFull) ========
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 
+    [junit] 	at avl.test.TestFull.testLargeInsertRandom(TestFull.java:533)
+    [junit] 
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] ===== Failure report for testTinyInsert(avl.test.TestFull) ========
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] Failure message: java.lang.AssertionError: Height of node {5} is not correct based on your leaf height expected:<1> but was:<0>
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] ===== End Failure report for testTinyInsert(avl.test.TestFull) ========
+    [junit] 
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] Tests run: 15, Failures: 2, Errors: 12, Skipped: 0, Time elapsed: 0.219 sec
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] Output:
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] ===== Failure report for testSmallInsert(avl.test.TestFull) ========
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] The node {7} has height {0}, which is not the expected height given its children
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] Tree before the problem occurred:
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] Root-7
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] Root-7
+    [junit] |  L-6
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] ===== End Failure report for testSmallInsert(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] ===== Failure report for testLargeInsertAscending(avl.test.TestFull) ========
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] The node {15} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] Root-0
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] Tree that triggered this problem:
+    [junit] 	at avl.test.TestFull.testSmallInsertRebalance(TestFull.java:153)
+    [junit] Root-0
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] |  R-1
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] ===== End Failure report for testLargeInsertAscending(avl.test.TestFull) ========
+    [junit] 
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] ===== Failure report for testSmallRemove(avl.test.TestFull) ========
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {7} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-7
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] Root-7
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] |  L-6
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] ===== End Failure report for testSmallRemove(avl.test.TestFull) ========
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] ===== Failure report for testSmallInsertDescending(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] The node {14} has height {0}, which is not the expected height given its children
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] Tree before the problem occurred:
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Root-14
+    [junit] 
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {199999} has height {0}, which is not the expected height given its children
+    [junit] Tree that triggered this problem:
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] Root-14
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] |  L-13
+    [junit] 	at avl.test.TestFull.testLargeInsertDescending(TestFull.java:506)
+    [junit] 
+    [junit] ===== End Failure report for testSmallInsertDescending(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testInsertSmallRandom(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {1} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-1
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-1
+    [junit] |  R-4
+    [junit] 
+    [junit] ===== End Failure report for testInsertSmallRandom(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testTinyInsertRebalance(avl.test.TestFull) ========
+    [junit] Failure message: java.lang.AssertionError: Inserted three values into empty tree but root's right child is null.
+    [junit] ===== End Failure report for testTinyInsertRebalance(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testSmallRemoveRebalance(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {15} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-15
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-15
+    [junit] |  L-10
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] ===== End Failure report for testSmallRemoveRebalance(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] ===== Failure report for testLargeInsertRandom(avl.test.TestFull) ========
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] The node {145147} has height {0}, which is not the expected height given its children
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] Tree before the problem occurred:
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] Root-145147
+    [junit] 
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] Root-145147
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] |  R-197342
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] ===== End Failure report for testLargeInsertRandom(avl.test.TestFull) ========
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] ===== Failure report for testSmallInsertRebalance(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] The node {15} has height {0}, which is not the expected height given its children
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] Tree before the problem occurred:
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] Root-15
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Root-15
+    [junit] Tree Validation Error (detail shown below):
+    [junit] |  L-10
+    [junit] 
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] ===== End Failure report for testSmallInsertRebalance(avl.test.TestFull) ========
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] ===== Failure report for testLargeInsertDescending(avl.test.TestFull) ========
+    [junit] 	at avl.test.TestFull.testSmallInsertAscending(TestFull.java:370)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] The node {199999} has height {0}, which is not the expected height given its children
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] Tree before the problem occurred:
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] Root-199999
+    [junit] 
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] Root-199999
+    [junit] |  L-199998
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 
+    [junit] ===== End Failure report for testLargeInsertDescending(avl.test.TestFull) ========
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] ===== Failure report for testSmallInsertAscending(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] Tree before the problem occurred:
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] Root-0
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] Root-0
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] |  R-1
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] ===== End Failure report for testSmallInsertAscending(avl.test.TestFull) ========
+    [junit] 
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] ===== Failure report for testRemove(avl.test.TestFull) ========
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] Root-0
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 
+    [junit] 	at avl.test.TestFull.testRemove(TestFull.java:322)
+    [junit] Tree that triggered this problem:
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] Root-0
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] |  R-1
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] ===== End Failure report for testRemove(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] ===== Failure report for testInsertDuplicates(avl.test.TestFull) ========
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] The node {13} has height {0}, which is not the expected height given its children
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] Tree before the problem occurred:
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] Root-13
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] Tree that triggered this problem:
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] Root-13
+    [junit] |  L-10
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] ===== End Failure report for testInsertDuplicates(avl.test.TestFull) ========
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] ===== Failure report for testTinyInsert(avl.test.TestFull) ========
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] Failure message: java.lang.AssertionError: Height of node {5} is not correct based on your leaf height expected:<1> but was:<0>
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] ===== End Failure report for testTinyInsert(avl.test.TestFull) ========
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] 
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 
+    [junit] The node {13} has height {0}, which is not the expected height given its children
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] Error: 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] 	at avl.test.TestFull.testInsertDuplicates(TestFull.java:444)
+    [junit] The node {7} has height {0}, which is not the expected height given its children
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at avl.test.TestFull.testSmallInsert(TestFull.java:116)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testLargeInsertAscending(TestFull.java:476)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {7} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testSmallRemove(TestFull.java:234)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {14} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testSmallInsertDescending(TestFull.java:395)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {1} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testInsertSmallRandom(TestFull.java:420)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {15} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testSmallRemoveRebalance(TestFull.java:276)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {145147} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testLargeInsertRandom(TestFull.java:533)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {15} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testSmallInsertRebalance(TestFull.java:153)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {199999} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testLargeInsertDescending(TestFull.java:506)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testSmallInsertAscending(TestFull.java:370)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testRemove(TestFull.java:322)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {13} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testInsertDuplicates(TestFull.java:444)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] 
+    [junit] Tests run: 15, Failures: 2, Errors: 12, Skipped: 0, Time elapsed: 0.219 sec
+    [junit] ------------- Standard Output ---------------
+    [junit] ===== Failure report for testSmallInsert(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {7} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-7
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-7
+    [junit] |  L-6
+    [junit] 
+    [junit] ===== End Failure report for testSmallInsert(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testLargeInsertAscending(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-0
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-0
+    [junit] |  R-1
+    [junit] 
+    [junit] ===== End Failure report for testLargeInsertAscending(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testSmallRemove(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {7} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-7
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-7
+    [junit] |  L-6
+    [junit] 
+    [junit] ===== End Failure report for testSmallRemove(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testSmallInsertDescending(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {14} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-14
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-14
+    [junit] |  L-13
+    [junit] 
+    [junit] ===== End Failure report for testSmallInsertDescending(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testInsertSmallRandom(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {1} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-1
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-1
+    [junit] |  R-4
+    [junit] 
+    [junit] ===== End Failure report for testInsertSmallRandom(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testTinyInsertRebalance(avl.test.TestFull) ========
+    [junit] Failure message: java.lang.AssertionError: Inserted three values into empty tree but root's right child is null.
+    [junit] ===== End Failure report for testTinyInsertRebalance(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testSmallRemoveRebalance(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {15} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-15
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-15
+    [junit] |  L-10
+    [junit] 
+    [junit] ===== End Failure report for testSmallRemoveRebalance(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testLargeInsertRandom(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {145147} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-145147
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-145147
+    [junit] |  R-197342
+    [junit] 
+    [junit] ===== End Failure report for testLargeInsertRandom(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testSmallInsertRebalance(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {15} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-15
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-15
+    [junit] |  L-10
+    [junit] 
+    [junit] ===== End Failure report for testSmallInsertRebalance(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testLargeInsertDescending(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {199999} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-199999
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-199999
+    [junit] |  L-199998
+    [junit] 
+    [junit] ===== End Failure report for testLargeInsertDescending(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testSmallInsertAscending(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-0
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-0
+    [junit] |  R-1
+    [junit] 
+    [junit] ===== End Failure report for testSmallInsertAscending(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testRemove(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-0
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-0
+    [junit] |  R-1
+    [junit] 
+    [junit] ===== End Failure report for testRemove(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testInsertDuplicates(avl.test.TestFull) ========
+    [junit] Failure message: Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {13} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-13
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-13
+    [junit] |  L-10
+    [junit] 
+    [junit] ===== End Failure report for testInsertDuplicates(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ===== Failure report for testTinyInsert(avl.test.TestFull) ========
+    [junit] Failure message: java.lang.AssertionError: Height of node {5} is not correct based on your leaf height expected:<1> but was:<0>
+    [junit] ===== End Failure report for testTinyInsert(avl.test.TestFull) ========
+    [junit] 
+    [junit] 
+    [junit] ------------- ---------------- ---------------
+    [junit] ------------- Standard Error -----------------
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {7} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testSmallInsert(TestFull.java:116)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testLargeInsertAscending(TestFull.java:476)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {7} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testSmallRemove(TestFull.java:234)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {14} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testSmallInsertDescending(TestFull.java:395)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {1} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testInsertSmallRandom(TestFull.java:420)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {15} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testSmallRemoveRebalance(TestFull.java:276)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {145147} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testLargeInsertRandom(TestFull.java:533)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {15} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testSmallInsertRebalance(TestFull.java:153)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {199999} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testLargeInsertDescending(TestFull.java:506)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testSmallInsertAscending(TestFull.java:370)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testRemove(TestFull.java:322)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {13} has height {0}, which is not the expected height given its children
+    [junit] 	at avl.validate.BSTValidator.CheckTree(BSTValidator.java:83)
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:26)
+    [junit] 	at avl.test.TestFull.testInsertDuplicates(TestFull.java:444)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+    [junit] 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+    [junit] 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+    [junit] 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+    [junit] 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+    [junit] 	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+    [junit] 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+    [junit] 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+    [junit] 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+    [junit] 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+    [junit] 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+    [junit] 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+    [junit] 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+    [junit] 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+    [junit] 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+    [junit] 	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1196)
+    [junit] 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1041)
+    [junit] ------------- ---------------- ---------------
+    [junit] 
+    [junit] Testcase: testSmallInsert took 0.1 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {7} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-7
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-7
+    [junit] |  L-6
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:45)
+    [junit] 	at avl.test.TestFull.testSmallInsert(TestFull.java:116)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testLargeInsertAscending took 0.015 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-0
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-0
+    [junit] |  R-1
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:45)
+    [junit] 	at avl.test.TestFull.testLargeInsertAscending(TestFull.java:476)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testSmallRemove took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {7} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-7
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-7
+    [junit] |  L-6
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:45)
+    [junit] 	at avl.test.TestFull.testSmallRemove(TestFull.java:234)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testSmallInsertDescending took 0.003 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {14} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-14
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-14
+    [junit] |  L-13
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:45)
+    [junit] 	at avl.test.TestFull.testSmallInsertDescending(TestFull.java:395)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testEmptyTree took 0 sec
+    [junit] Testcase: testInsertSmallRandom took 0.002 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {1} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-1
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-1
+    [junit] |  R-4
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:45)
+    [junit] 	at avl.test.TestFull.testInsertSmallRandom(TestFull.java:420)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testTinyInsertRebalance took 0 sec
+    [junit] 	FAILED
+    [junit] Inserted three values into empty tree but root's right child is null.
+    [junit] junit.framework.AssertionFailedError: Inserted three values into empty tree but root's right child is null.
+    [junit] 	at avl.test.TestFull.testTinyInsertRebalance(TestFull.java:94)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testSmallRemoveRebalance took 0.002 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {15} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-15
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-15
+    [junit] |  L-10
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:45)
+    [junit] 	at avl.test.TestFull.testSmallRemoveRebalance(TestFull.java:276)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testLargeInsertRandom took 0.029 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {145147} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-145147
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-145147
+    [junit] |  R-197342
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:45)
+    [junit] 	at avl.test.TestFull.testLargeInsertRandom(TestFull.java:533)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testSmallInsertRebalance took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {15} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-15
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-15
+    [junit] |  L-10
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:45)
+    [junit] 	at avl.test.TestFull.testSmallInsertRebalance(TestFull.java:153)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testLargeInsertDescending took 0.002 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {199999} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-199999
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-199999
+    [junit] |  L-199998
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:45)
+    [junit] 	at avl.test.TestFull.testLargeInsertDescending(TestFull.java:506)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testSmallInsertAscending took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-0
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-0
+    [junit] |  R-1
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:45)
+    [junit] 	at avl.test.TestFull.testSmallInsertAscending(TestFull.java:370)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testRemove took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {0} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-0
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-0
+    [junit] |  R-1
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:45)
+    [junit] 	at avl.test.TestFull.testRemove(TestFull.java:322)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testInsertDuplicates took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] Tree Validation Error (detail shown below):
+    [junit] Tree Validation Error (detail shown below):
+    [junit] The node {13} has height {0}, which is not the expected height given its children
+    [junit] Tree before the problem occurred:
+    [junit] Root-13
+    [junit] 
+    [junit] Tree that triggered this problem:
+    [junit] Root-13
+    [junit] |  L-10
+    [junit] 
+    [junit] 	at avl.validate.BSTValidator.check(BSTValidator.java:45)
+    [junit] 	at avl.test.TestFull.testInsertDuplicates(TestFull.java:444)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+    [junit] Testcase: testTinyInsert took 0 sec
+    [junit] 	FAILED
+    [junit] Height of node {5} is not correct based on your leaf height expected:<1> but was:<0>
+    [junit] junit.framework.AssertionFailedError: Height of node {5} is not correct based on your leaf height expected:<1> but was:<0>
+    [junit] 	at avl.test.TestFull.testTinyInsert(TestFull.java:68)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    [junit] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    [junit] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    [junit] 
+
+BUILD FAILED
+/mnt/c/Users/coles/git/cse247/cse247-s20-support/build.xml:31: Test avl.test.TestFull failed
+
+Total time: 0 seconds
+========
+Testing in ./GradingRepos/repos/cse247-s20-students-lab11-evinjaff: avl as of  2020-04-18 00:01
+========
+Now in: /mnt/c/Users/coles/git/cse247/cse247-s20-support/GradingRepos/repos/cse247-s20-students-lab11-evinjaff
+Your branch is up to date with 'origin/master'.
+HEAD is now at 78c0a9f robograde
+No local changes to save
+
+Already up to date.
+Going back in time to:  2020-04-18 00:01
+At hash 814d5379bfe962aa7c6e7bf9f2b1bc7951164e3e
+
+Buildfile: /mnt/c/Users/coles/git/cse247/cse247-s20-support/build.xml
+
+copytest:
+     [echo] would copy from /mnt/c/Users/coles/git/cse247/cse247-s20-tas-labs-source/ key evinjaff testfilesource test/TestFull package avl repo ./GradingRepos/repos/cse247-s20-students-lab11-evinjaff
+     [copy] Copying 1 file to /mnt/c/Users/coles/git/cse247/cse247-s20-support/GradingRepos/repos/cse247-s20-students-lab11-evinjaff/labs/avl/test
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Compiling the code
+Buildfile: /mnt/c/Users/coles/git/cse247/cse247-s20-support/build.xml
+
+compile:
+     [echo] Compiling avl/tree/AVLTree
+    [mkdir] Created dir: /mnt/c/Users/coles/git/cse247/cse247-s20-support/GradingRepos/repos/cse247-s20-students-lab11-evinjaff/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /mnt/c/Users/coles/git/cse247/cse247-s20-support/build.xml
+
+compile:
+     [echo] Compiling avl/nodes/AVLTreeNode
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /mnt/c/Users/coles/git/cse247/cse247-s20-support/build.xml
+
+compile:
+     [echo] Compiling avl/test/TestFull
+    [javac] Compiling 1 source file to /mnt/c/Users/coles/git/cse247/cse247-s20-support/GradingRepos/repos/cse247-s20-students-lab11-evinjaff/bin
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+Running test test.TestFull
+Buildfile: /mnt/c/Users/coles/git/cse247/cse247-s20-support/build.xml
+
+test:
+    [junit] Running avl.test.TestFull
+    [junit] Testsuite: avl.test.TestFull
+    [junit] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.153 sec
+    [junit] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.153 sec
+    [junit] 
+    [junit] Testcase: testSmallInsert took 0.065 sec
+    [junit] Testcase: testLargeInsertAscending took 0.465 sec
+    [junit] Testcase: testSmallRemove took 0.001 sec
+    [junit] Testcase: testSmallInsertDescending took 0.001 sec
+    [junit] Testcase: testEmptyTree took 0 sec
+    [junit] Testcase: testInsertSmallRandom took 0.002 sec
+    [junit] Testcase: testTinyInsertRebalance took 0 sec
+    [junit] Testcase: testSmallRemoveRebalance took 0.001 sec
+    [junit] Testcase: testLargeInsertRandom took 0.47 sec
+    [junit] Testcase: testSmallInsertRebalance took 0.002 sec
+    [junit] Testcase: testLargeInsertDescending took 0.096 sec
+    [junit] Testcase: testSmallInsertAscending took 0.001 sec
+    [junit] Testcase: testRemove took 0 sec
+    [junit] Testcase: testInsertDuplicates took 0.003 sec
+    [junit] Testcase: testTinyInsert took 0 sec
+
+BUILD SUCCESSFUL
+Total time: 1 second
+================
+Lab is counted as working
+================
+
+CSE247 Robot tester ends testing avl on 2020-04-18 19:27:23 -0500
+-------------------

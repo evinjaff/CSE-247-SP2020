@@ -1,0 +1,99 @@
+Your TA's name:
+
+Students in your studio group:
+
+    Name        WUSTLKey (e.g. "a.bear")
+	
+1.  Evin Jaff    "evin"
+2.  Annabel Rice "
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question A1:
+
+Question A2:
+
+Question A3:
+A: 0/7
+B: 1/6
+C: 2/3
+D: 4/5
+E: 8/13
+F: 9/10
+G: 11/12
+Question B1:
+No, since there's a cycle
+Question B2:
+v allways finishes before u in an acyclical directed graph
+Question B3:
+v will finish before u since u's finishing time is assigned after v
+Question B4:
+v will finish before u since u's finishing time is assigned after v
+Question B5:
+No, since we're assuming an acyclic, directed graph, this wouldn't happen
+Question B6:
+Proof:
+v is traversed so it has a finishing time of
+Question C1:
+A: 0/11
+B: 1/6
+C: 7/10
+D: 8/9
+E: 2/5
+F: 3/4
+
+Question C2:
+
+Flip B>E and C>D
+
+Make A>C>B>E>D>F
+
+Make A>B>C>D>E>F
+
+
+
+
+Question C3:
+Make A>B>C>D>E>F
+A(0,11)
+B(1,10)
+C(2,9)
+D(3,8)
+E(4,7)
+F(5,6)
+
+
+Make A>C>B>E>D>F
+A(0,11)
+C(1,10)
+B(2,9)
+E(3,8)
+D(4,7)
+F(5,6)
+
+Question C4:
+the highest starting value has no successor, since this implies it must not have used any of its edges
+
+Question C5:
+vn's finishing time is the smallest, since it will finish immediately and then push finishes upstream
+Question C6:
+Starting from F
+F: (0,1)
+E: (2,3)
+D: (4,5)
+C: (6,7)
+B: (7,8)
+A: (8,9) 
+
+Start DFS at vn and keep doing DFS on successive ones all the way back to v1
+Question C7:
+
+Question D1:
+
+Question D2:
+
+Question D3:
